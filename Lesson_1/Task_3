@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int numeric_1;
+    int numeric_2;
+    char symbol;
+
+    cout << "Enter first numeric:\t";
+    cin >>  numeric_1;
+
+    cout << "Enter symbol (+, -, *, /):\t";
+    cin >> symbol;
+
+    cout << "Enter sencod numeric:\t";
+    cin >> numeric_2;
+
+    switch (symbol) {
+    case '+':
+        cout << "Result" << numeric_1 + numeric_2 << endl;
+        break;
+    case '-':
+        cout << "Result" << numeric_1 - numeric_2 << endl;
+        break;
+    case '*':
+        cout << "Result" << numeric_1 * numeric_2 << endl;
+        break;
+    case '/':
+        if (numeric_2 != 0)
+            cout << "Result" << numeric_1 / numeric_2 << endl;
+        else
+        cout << "error" << endl;
+        break;
+    default:
+        cout << "Error" << endl;
+        break;
+    }
+    return 0;
+}
