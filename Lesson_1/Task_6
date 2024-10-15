@@ -1,0 +1,47 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int stars = 0;
+    cout << "Enter amount of stars: ";
+    cin >> stars;
+    for (int height = 0; height < stars; height++){
+        for (int width = 0; width < stars - (stars - height); width++){
+            cout << "*";
+        }
+            cout << endl;
+    }
+    getch();
+    system("cls");
+    for (int height = 0; height < stars; height++){
+        for (int width = 0; width < stars - height - 1; width++){
+            cout << " ";
+        }
+        for (int width = 0; width < height; width++){
+        cout << "*";
+        }
+        cout << endl;
+    }
+    getch();
+    system("cls");
+    for (int height = 0; height < stars; height++){
+        for (int width = 0; width < height ; width++){
+            cout << " ";
+        }
+        for (int width = 0; width < (stars - height) - 1; width++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    getch();
+    system("cls");
+    for (int height = 0; height < stars; height++){
+        for (int width = 0; width < (stars - height) - 1; width++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
