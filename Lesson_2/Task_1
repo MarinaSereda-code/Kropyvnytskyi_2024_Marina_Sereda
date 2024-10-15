@@ -7,7 +7,7 @@ int main()
     int numbers [5];
     cout << "Enter 5 numbers: ";
     for (int bin = 0; bin < 5; bin++) {
-        cin >> numbers[i];
+        cin >> numbers[bin];
     }
     for (int bin = 0; bin < 5; bin++) {
         cout << numbers[bin];
